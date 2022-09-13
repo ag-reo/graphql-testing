@@ -1,0 +1,19 @@
+overwrite: true
+schema: "http://localhost:8000/gql"
+documents: "app/server/graphql/schema/**/*.graphql"
+generates:
+  app/server/graphql/sdk.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-graphql-request"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
+    config:
+      avoidOptionals: true
+      immutableTypes: false
+      flattenGeneratedTypes: true
+      preResolveTypes: true
+      skipTypeNameForRoot: true
+      skipTypename: true

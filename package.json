@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "cross-env NODE_ENV=production netlify dev",
+    "codegen": "graphql-codegen --config codegen.bak.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@netlify/functions": "^1.0.0",
+    "@remix-run/netlify": "^1.7.0",
+    "@remix-run/node": "^1.7.0",
+    "@remix-run/react": "^1.7.0",
+    "bootstrap": "^5.2.1",
+    "classnames": "^2.3.1",
+    "cross-env": "^7.0.3",
+    "fs-extra": "^10.1.0",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
+    "graphql-tag": "^2.12.6",
+    "nouislider": "^15.6.1",
+    "nprogress": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "select2": "^4.1.0-rc.0",
+    "sweetalert2": "^11.4.32",
+    "tiny-invariant": "^1.2.0",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.12.0",
+    "@graphql-codegen/introspection": "2.2.1",
+    "@graphql-codegen/typescript": "2.7.3",
+    "@graphql-codegen/typescript-graphql-files-modules": "2.2.1",
+    "@graphql-codegen/typescript-graphql-request": "^4.5.4",
+    "@graphql-codegen/typescript-operations": "2.5.3",
+    "@remix-run/dev": "^1.7.0",
+    "@remix-run/eslint-config": "^1.7.0",
+    "@remix-run/serve": "^1.7.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
